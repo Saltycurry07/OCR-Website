@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>发票手写识别并导出 Word</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>发票手写识别并导出 Word</h1>
+    <p>上传发票图片，系统将尽可能只提取中文手写内容并生成 Word 文档。</p>
+
+    <form id="uploadForm">
+      <input type="file" id="imageInput" accept="image/*" required />
+      <button type="submit">识别并下载 Word</button>
+    </form>
+
+    <p id="status"></p>
+  </main>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
